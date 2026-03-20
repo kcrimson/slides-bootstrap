@@ -11,3 +11,13 @@ build
 .settings
 
 .project
+
+.bloop
+
+# Ruby / Bundler
+vendor/
+.bundle/
+*.gem
+
+# mise
+.mise.local.toml

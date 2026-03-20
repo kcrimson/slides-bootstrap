@@ -9,7 +9,7 @@
 :revealjs_controls: false
 :revealjs_width: 1920
 :revealjs_height: 1080
-:revealjs_plugins: src/main/slides/revealjs-plugins.js
+:revealjs_plugins: revealjs-plugins.js
 :imagesdir: images
 :customcss: css/custom.css
 :icons: font
@@ -22,7 +22,7 @@
 System.out.println("Hello");
 ----
 
-== diagrams
+== graphviz
 
 [graphviz]
 ----
@@ -32,4 +32,14 @@ digraph{
     D->B
     B->C
 }
+----
+
+== mermaid
+
+[mermaid]
+----
+graph TD
+  A[Start] --> B{Decision}
+  B -->|Yes| C[OK]
+  B -->|No| D[Cancel]
 ----
